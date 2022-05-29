@@ -8,9 +8,9 @@ export type CardStyleProps = {
 export const CardStyle = styled.div<CardStyleProps>`
   border-radius: ${pxToRem(16)};
   padding: ${pxToRem(16)};
+  background-color: white;
 
   ${({ elevation }) =>
-    elevation &&
     css`
       --blur: calc(var(--epx) * 2);
       --elevation: ${elevation};
